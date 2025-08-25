@@ -1,0 +1,1 @@
+I don't like php but it's unfair to judge something before actually working with it and what's better than creating a CRUD application with a bit of abstraction / database-agnostic features!
