@@ -1,3 +1,15 @@
+<?php
+$conn = new mysqli("localhost", "root", "", "todolist");
+if ($conn->connect_error) {
+    die("Connection to database failed: ". $conn->connect_error);
+}
+if (isset($_POST["addtask"])) {
+    $task = $_POST["task"];
+    $conn -> query("INSERT INTO task (task) VALUES ('$task')");
+    header("Location: index.php");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
